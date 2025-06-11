@@ -1,0 +1,29 @@
+Steps to use JavaCC+JTB:
+========================
+
+0. Install a JDK ("javac" and "java" should work) and JavaCC on your computer
+    // Linux:
+        sudo apt install openjdk
+        sudo apt install javacc
+
+   We also need Java Tree Builder ("jtb132.jar"), which is available in this folder.
+
+1. Our grammar is written in a textual form in a jj file. Pass the calculator regex/grammar file to JTB:
+     
+    
+    
+
+2. Generate parser using JavaCC:
+    javacc jtb.out.jj
+    
+
+3. Either edit any existing visitor (such as GJNoArguDepthFirst.java) or create a new one inside the "visitor" directory. Make sure the correct object is created in Main.java (present in the current directory).
+
+4. Compile your code:
+    javac Main.java
+
+5. Test the parser on our testcase ("test"):
+    java Main < test
+
+6. Edit the jj file, recreate the parser, design new programming languages, create new testcases, enjoy!
+

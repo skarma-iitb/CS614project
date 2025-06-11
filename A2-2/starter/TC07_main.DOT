@@ -1,0 +1,9 @@
+digraph {
+rankdir=TB
+bb0 [style="rounded,filled", shape="box", fillcolor="orange", fontname="monospace", xlabel="End", label="TestTC02 o;
+int res;
+o = new TestTC02();
+res = o.foo( );
+System.out.println(res);
+"];
+}

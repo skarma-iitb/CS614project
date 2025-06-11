@@ -1,0 +1,43 @@
+digraph {
+rankdir=TB
+"bb1" -> "bb2";
+
+bb1 [fillcolor="white", style="filled", shape="box", fontname="monospace", xlabel="bb1", label="int a;
+int b;
+int c;
+int d;
+boolean z;
+a = 5;
+b = 6;
+z = true;
+d = 7;
+"];
+"bb2" -> "bb3","bb4";
+
+bb2 [fillcolor="white", style="filled", shape="box", fontname="monospace", xlabel="bb2", label="z
+"];
+"bb4" -> "bb8";
+
+bb4 [fillcolor="gray", style="filled", shape="doublecircle", fontname="monospace", label=""];
+"bb8" -> "bb9";
+
+bb8 [fillcolor="white", style="filled", shape="box", fontname="monospace", xlabel="bb8", label="c = a - b;
+d = c * a;
+"];
+"bb9" -> "bb5";
+
+bb9 [fillcolor="gray", style="filled", shape="doublecircle", fontname="monospace", label=""];
+bb5 [style="rounded,filled", shape="box", fillcolor="orange", fontname="monospace", xlabel="End", label="return d;
+"];
+"bb3" -> "bb6";
+
+bb3 [fillcolor="gray", style="filled", shape="doublecircle", fontname="monospace", label=""];
+"bb6" -> "bb7";
+
+bb6 [fillcolor="white", style="filled", shape="box", fontname="monospace", xlabel="bb6", label="c = a + b;
+d = c + a;
+"];
+"bb7" -> "bb5";
+
+bb7 [fillcolor="gray", style="filled", shape="doublecircle", fontname="monospace", label=""];
+}

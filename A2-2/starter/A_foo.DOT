@@ -1,0 +1,53 @@
+digraph {
+rankdir=TB
+"bb1" -> "bb2";
+
+bb1 [fillcolor="white", style="filled", shape="box", fontname="monospace", xlabel="bb1", label="int a;
+int b;
+int c;
+int [] arr;
+int len;
+int index;
+B obj;
+boolean z;
+obj = new B();
+len = 5;
+a = 100;
+arr = new int [len];
+a = len;
+b = len;
+x = 1;
+obj.x = a;
+index = 0;
+len = a + b;
+z = a != b;
+b = arr[index];
+c = arr[x];
+"];
+"bb2" -> "bb3","bb4";
+
+bb2 [fillcolor="white", style="filled", shape="box", fontname="monospace", xlabel="bb2", label="z
+"];
+"bb4" -> "bb8";
+
+bb4 [fillcolor="gray", style="filled", shape="doublecircle", fontname="monospace", label=""];
+"bb8" -> "bb9";
+
+bb8 [fillcolor="white", style="filled", shape="box", fontname="monospace", xlabel="bb8", label="System.out.println(a);
+"];
+"bb9" -> "bb5";
+
+bb9 [fillcolor="gray", style="filled", shape="doublecircle", fontname="monospace", label=""];
+bb5 [style="rounded,filled", shape="box", fillcolor="orange", fontname="monospace", xlabel="End", label="return a;
+"];
+"bb3" -> "bb6";
+
+bb3 [fillcolor="gray", style="filled", shape="doublecircle", fontname="monospace", label=""];
+"bb6" -> "bb7";
+
+bb6 [fillcolor="white", style="filled", shape="box", fontname="monospace", xlabel="bb6", label="a = y;
+"];
+"bb7" -> "bb5";
+
+bb7 [fillcolor="gray", style="filled", shape="doublecircle", fontname="monospace", label=""];
+}

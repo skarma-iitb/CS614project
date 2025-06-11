@@ -1,0 +1,22 @@
+digraph {
+rankdir=TB
+bb3 [style="rounded,filled", shape="box", fillcolor="orange", fontname="monospace", xlabel="End", label="a = b + c;
+return a;
+"];
+}digraph {
+rankdir=TB
+bb4 [style="rounded,filled", shape="box", fillcolor="orange", fontname="monospace", xlabel="End", label="int a;
+int b;
+int c;
+int d;
+boolean z;
+TestTC02 o;
+a = 1;
+b = 2;
+o = new TestTC02();
+c = a + b;
+d = c + a;
+d = o.bar( a b c );
+return d;
+"];
+}
